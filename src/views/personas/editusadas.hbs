@@ -1,0 +1,40 @@
+<div class="container p-4">
+    <div class="col-md-6 mx-auto">
+        <H3 class="text-center text-uppercase">HERRAMIENTAS EN USO</H3>
+        <div class="card text-center">
+            <div class="card-header">
+                <h3 class="text-uppercase bg-success">EDITANDO UN HERRAMIENTA</h3>
+            </div>
+            <div class="card-body">
+                <form action = "/editusadas/{{herramientas_uso.id}}" method = "post"> 
+                <div class="input group mt-2">
+                    <label for="operador_id" class="input-group-text">OPERARIO</label>
+                    <input class="form-control" type="text" name="operador_id" id="operador_id" value="{{herramientas_uso.operador_id}}" placeholder=" "
+                    autofocus required>
+                </div>
+                 <div class="input group mt-2">
+                    <label for="herramienta_id" class="input-group-text">HERRAMIENTA</label>
+                    <input class="form-control" type="text" name="herramienta_id" id="herramienta_id" value="{{herramientas_uso.herramienta_id}}" placeholder=" "
+                    required>
+                </div>
+                 <div class="input group mt-2">
+                    <label for="obra" class="input-group-text">OBRA</label>
+                    <input class="form-control" type="text" name="obra" id="obra" value="{{herramientas_uso.obra}}" placeholder="Obra asignada" required>
+                </div>
+                
+                 <div class="input group mt-2">
+                    <label for="fecha" class="input-group-text">FECHA</label>
+                    <input class="form-control" type="text" name="fecha" id="fecha" value="{{herramientas_uso.fecha}}" placeholder="Ejemplo: 1980-10-21" required>
+                </div>
+                 <div class="input group mt-2">
+                    <label for="cantidad" class="input-group-text">CANTIDAD</label>
+                    <input class="form-control" type="text" name="cantidad" id="cantidad" value="{{herramientas_uso.cantidad}}" placeholder=" " required>
+                </div>
+                ,<form-group class="mt-4 d-grid gap-2">
+                    <button class="btn btn-success">ACTUALIZAR</button>
+                </form-group>
+                 </form>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,60 @@
+<div class="container">
+    <div class="row mt-5 p-0 m-0  col-md-12 ">
+        {{#if usuarios}}
+                <table class="table text.center table-hover table-bordered">
+                <thead>
+                    <tr class=" table-dark" >
+                         <th scope="col" class="col-0">Id</th>
+                        <th scope="col">Cedula</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Apellido</th>
+                        <th scope="col">Edad</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Telefono</th>
+                        <th scope="col">Fecha</th>
+                        <th scope="col">Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                {{#each usuarios}}
+                        <tr>
+                            <td>{{this.id}}</td>
+                            <td>{{this.cedula}}</td>
+                            <td>{{this.nombre}}</td>
+                            <td>{{this.apellido}}</td>
+                            <td>{{this.edad}}</td>
+                            <td>{{this.email}}</td>
+                            <td>{{this.telefono}}</td>
+                             <td>{{this.fechaIngreso}}</td>
+
+                            <td>
+                                <div class="btn.group">
+                                    <a href="/edit/{{id}}" class="btn btn-warning p-2">
+                                    <i class="fa-solid fa-pencil"></i></a>
+                                    <a href="/delete/{{id}}" class="btn btn-danger p-2">
+                                    <i class="fa-solid fa-trash"></i></a>
+                                </div>
+                            </td>
+                        </tr>
+                 {{/each}}
+                </tbody>
+                <tfoot>
+                    <tr class="table-primary">
+                        <td colspan="10" class="text-center">LISTA DE EMPLEADOS</td>
+                    </tr>
+                </tfoot>
+            </table>
+        
+        {{else usuarios}}
+            <div class="card text-center mx-auto" style="width:350px;">
+                <div class="card-header">
+                    <h3>Debes crear un trabajador</h3>
+                </div>
+                <div class="card-body">
+                    <p>Ingresa aqui para registrar un empleado en la aplicacion CONSTRUCIVIL.APP</p>
+                    <a href="/" class="btn btn-success ">Ir a crear</a>
+                </div>
+            </div>
+        {{/if}}
+    </div>
+</div>

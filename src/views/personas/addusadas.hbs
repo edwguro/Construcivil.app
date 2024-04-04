@@ -1,0 +1,39 @@
+<div class="container p-4">
+    <div class="col-md-6 mx-auto">
+        <div class="card text-center">
+            <div class="card-header">
+                <h3 class="text-uppercase bg-success">ASIGNAR HERRAMIENTAS</h3>
+            </div>
+            <div class="card-body">
+                <form action = "/addusadas" method = "post"> 
+                <div class="input group mt-2">
+                    <label for="operador_id" class="input-group-text">OPERARIO</label>
+                    <input class="form-control" type="text" name="operador_id" id="operador_id" placeholder="Ingrese el id del empleado"
+                    autofocus required>
+                </div>
+                 <div class="input group mt-2">
+                    <label for="herramienta_id" class="input-group-text">HERRAMIENTA</label>
+                    <input class="form-control" type="text" name="herramienta_id" id="herramienta_id" placeholder="Ingrese el id de la herramienta"
+                    required>
+                </div>
+                 <div class="input group mt-2">
+                    <label for="obra" class="input-group-text">OBRA</label>
+                    <input class="form-control" type="text" name="obra" id="obra" placeholder="Obra asignada" required>
+                </div>
+                 <div class="input group mt-2">
+                    <label for="fecha" class="input-group-text">FECHA</label>
+                    <input class="form-control" type="text" name="fecha" id="fecha" placeholder="Ejemplo: 2023-05-24" required>
+                </div>
+                 <div class="input group mt-2">
+                    <label for="cantidad" class="input-group-text">CANTIDAD</label>
+                    <input class="form-control" type="text" name="cantidad" id="cantidad" placeholder="Ingrese la cantidad asignada"
+                     required>
+                </div>
+                <form-group class="mt-4 d-grid gap-2">
+                    <button class="btn btn-success">CREAR</button>
+                </form-group>
+                 </form>
+            </div>
+        </div>
+    </div>
+</div>

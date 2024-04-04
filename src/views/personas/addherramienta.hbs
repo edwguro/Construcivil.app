@@ -1,0 +1,34 @@
+<div class="container p-4">
+    <div class="col-md-6 mx-auto">
+        <div class="card text-center">
+            <div class="card-header">
+                <h3 class="text-uppercase bg-success">CREAR UNA HERRAMIENTA</h3>
+            </div>
+            <div class="card-body">
+                <form action = "/addherramienta" method = "post"> 
+                <div class="input group mt-2">
+                    <label for="tipoHerramienta" class="input-group-text">TIPO HERRAMIENTA</label>
+                    <input class="form-control" type="text" name="tipoHerramienta" id="tipoHerramienta" placeholder="Ingrese un tipoHerramienta"
+                    autofocus required>
+                </div>
+                 <div class="input group mt-2">
+                    <label for="marca" class="input-group-text">MARCA</label>
+                    <input class="form-control" type="text" name="marca" id="marca" placeholder="Ingrese la marca"
+                    required>
+                </div>
+                 <div class="input group mt-2">
+                    <label for="descripcion" class="input-group-text">DESCRIPCION</label>
+                    <input class="form-control" type="text" name="descripcion" id="descripcion" placeholder="Ingrese su descripcion" required>
+                </div>
+                 <div class="input group mt-2">
+                    <label for="fechaIngreso" class="input-group-text">FECHA</label>
+                    <input class="form-control" type="text" name="fechaIngreso" id="fechaIngreso" placeholder="Ejemplo: 1980-10-21" required>
+                </div>
+                ,<form-group class="mt-4 d-grid gap-2">
+                    <button class="btn btn-success">CREAR</button>
+                </form-group>
+                 </form>
+            </div>
+        </div>
+    </div>
+</div>

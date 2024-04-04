@@ -1,0 +1,57 @@
+<div class="container">
+    <div class="row mt-5 p-0 m-0  col-md-12 ">
+        <h2 class="text-center text-wrning text-bold">LISTADO DE HERRAMIENTAS EN USO</h2>
+        {{#if herramientas_uso}}
+                <table class="table text.center table-hover table-bordered">
+                <thead>
+                    <tr class=" table-dark" >
+                         <th scope="col" class="col-0">Id</th>
+                        <th scope="col">OPERADOR</th>
+                        <th scope="col">HERRAMIENTA/th>
+                        <th scope="col">OBRA</th>
+                        <th scope="col">FECHA</th>
+                        <th scope="col">CANTIDAD</th>
+                        <th scope="col">ACCIONES</th>
+                    </tr>
+                </thead>
+                <tbody>
+                {{#each herramientas_uso}}
+                        <tr>
+                            <td>{{this.id}}</td>
+                            <td>{{this.operador_id}}</td>
+                            <td>{{this.herramienta_id}}</td>
+                            <td>{{this.obra}}</td>
+                             <td>{{this.fecha}}</td>
+                             <td>{{this.cantidad}}</td>
+
+                            <td>
+                                <div class="btn.group">
+                                    <a href="/editusadas/{{id}}" class="btn btn-warning p-2">
+                                    <i class="fa-solid fa-pencil"></i></a>
+                                    <a href="/listusadas/delete/{{id}}" class="btn btn-danger p-2">
+                                    <i class="fa-solid fa-trash"></i></a>
+                                </div>
+                            </td>
+                        </tr>
+                 {{/each}}
+                </tbody>
+                <tfoot>
+                    <tr class="table-primary">
+                        <td colspan="10" class="text-center"></td>
+                    </tr>
+                </tfoot>
+            </table>
+        
+        {{else }}
+            <div class="card text-center mx-auto" style="width:350px;">
+                <div class="card-header">
+                    <h3>Debes Asignar herramientas</h3>
+                </div>
+                <div class="card-body">
+                    <p>Ingresa aqui para registrar nueva asiganacion de  herramienta en la base de datos CONSTRUCIVIL.APP</p>
+                    <a href="/addusadas" class="btn btn-success ">Ir a crear</a>
+                </div>
+            </div>
+        {{/if}}
+    </div>
+</div>

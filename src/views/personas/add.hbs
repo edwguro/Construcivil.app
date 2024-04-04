@@ -1,0 +1,48 @@
+<div class="container p-4">
+    <div class="col-md-6 mx-auto">
+        <div class="card text-center">
+            <div class="card-header">
+                <h3 class="text-uppercase bg-success">CREAR NUEVO EMPLEADO</h3>
+            </div>
+            <div class="card-body">
+                <form action = "/add" method = "post"> 
+                <div class="input group mt-2">
+                    <label for="cedula" class="input-group-text">CEDULA</label>
+                    <input class="form-control" type="text" name="cedula" id="cedula" placeholder="Ingrese No cedula"
+                    autofocus required>
+                </div>
+                 <div class="input group mt-2">
+                    <label for="nombre" class="input-group-text">NOMBRE</label>
+                    <input class="form-control" type="text" name="nombre" id="nombre" placeholder="Ingrese nombres"
+                    required>
+                </div>
+                 <div class="input group mt-2">
+                    <label for="apellido" class="input-group-text">APELLIDOS</label>
+                    <input class="form-control" type="text" name="apellido" id="apellido" placeholder="Ingrese su apellidos" required>
+                </div>
+                 <div class="input group mt-2">
+                    <label for="edad" class="input-group-text">EDAD</label>
+                    <input class="form-control" type="text" name="edad" id="edad" placeholder="Ingrese edad" required>
+                </div>
+                 <div class="input group mt-2">
+                    <label for="email" class="input-group-text">EMAIL</label>
+                    <input class="form-control" type="text" name="email" id="email" placeholder="Ingrese su email"
+                     required>
+                </div>
+                 <div class="input group mt-2">
+                    <label for="telefono" class="input-group-text">TELEFONO</label>
+                    <input class="form-control" type="text" name="telefono" id="telefono" placeholder="number-fone"
+                     required>
+                </div>
+                 <div class="input group mt-2">
+                    <label for="fechaIngreso" class="input-group-text">FECHA</label>
+                    <input class="form-control" type="text" name="fechaIngreso" id="fechaIngreso" placeholder="Ejemplo: 1980-10-21" required>
+                </div>
+                <form-group class="mt-4 d-grid gap-2">
+                    <button class="btn btn-success">CREAR</button>
+                </form-group>
+                 </form>
+            </div>
+        </div>
+    </div>
+</div>

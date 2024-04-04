@@ -1,0 +1,49 @@
+<div class="container p-4">
+    <div class="col-md-6 mx-auto">
+        <H3 class="text-center text-uppercase">LISTA DE PERSONAS</H3>
+        <div class="card text-center">
+            <div class="card-header">
+                <h3 class="text-uppercase bg-success">EDITANDO UN EMPLEADO</h3>
+            </div>
+            <div class="card-body">
+                <form action = "/edit/{{usuarios.id}}" method = "post"> 
+                <div class="input group mt-2">
+                    <label for="cedula" class="input-group-text">CEDULA</label>
+                    <input class="form-control" type="text" name="cedula" id="cedula" value="{{usuarios.cedula}}" placeholder="Ingrese No cedula"
+                    autofocus required>
+                </div>
+                 <div class="input group mt-2">
+                    <label for="nombre" class="input-group-text">NOMBRE</label>
+                    <input class="form-control" type="text" name="nombre" id="nombre" value="{{usuarios.nombre}}" placeholder="Ingrese nombres"
+                    required>
+                </div>
+                 <div class="input group mt-2">
+                    <label for="apellido" class="input-group-text">APELLIDOS</label>
+                    <input class="form-control" type="text" name="apellido" id="apellido" value="{{usuarios.apellido}}" placeholder="Ingrese su apellidos" required>
+                </div>
+                 <div class="input group mt-2">
+                    <label for="edad" class="input-group-text">EDAD</label>
+                    <input class="form-control" type="text" name="edad" id="edad" value="{{usuarios.edad}}" placeholder="Ingrese edad" required>
+                </div>
+                 <div class="input group mt-2">
+                    <label for="email" class="input-group-text">EMAIL</label>
+                    <input class="form-control" type="text" name="email" id="email" value="{{usuarios.email}}" placeholder="Ingrese su email"
+                     required>
+                </div>
+                 <div class="input group mt-2">
+                    <label for="telefono" class="input-group-text">TELEFONO</label>
+                    <input class="form-control" type="text" name="telefono" id="telefono" value="{{usuarios.telefono}}"placeholder="number-fone"
+                     required>
+                </div>
+                 <div class="input group mt-2">
+                    <label for="fechaIngreso" class="input-group-text">FECHA</label>
+                    <input class="form-control" type="text" name="fechaIngreso" id="fechaIngreso" value="{{usuarios.dechaIngreso}}" placeholder="Ejemplo: 1980-10-21" required>
+                </div>
+                ,<form-group class="mt-4 d-grid gap-2">
+                    <button class="btn btn-success">ACTUALIZAR</button>
+                </form-group>
+                 </form>
+            </div>
+        </div>
+    </div>
+</div>

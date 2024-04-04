@@ -1,0 +1,60 @@
+
+  <nav class="navbar navbar-expand-lg navbar-dark px-10" style="width: 100%; height: 70px;
+    margin: 0 auto;background: linear-gradient(135deg, #02021b 0%, #3b248e 100%);color: white;padding: 10px;">
+    <div class="container-fluid">
+        <a class="navbar-logo" href=""> <img src="/img/logo.jpg" style="width:150px;height:40px;"></a>
+        <a class="nav-link " href="#" style="color:#2bf546;  ">
+        <H3>CONSTRUCIVIL SAS</H3>
+         </a>
+       <div>
+        <a href="/login" class="fa-solid fa-user-lock px-5"
+        style=" margin-right: 0px; float: left;display:flex;color: rgb(41, 45, 243);font-size: 20px;"></a>
+        <p class="px-5" style="font-size: 10px; text:center;">Inicio</p>
+       </div>
+       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon"></span>
+       </button>
+       <div class="collapse navbar-collapse" id="navbarNav">
+         <ul class="navbar-nav" style="margin-left:auto;">
+         <li class="nav-item">
+         <a class="nav-link text-warning" href="/prueba">Home</a>
+         </li>
+         <li class="nav-item dropdown">
+         <a class="nav-link dropdown-toggle text-warning" href="/list" id="navbarDropdownMenuLink" role="button"
+          data-bs-toggle="dropdown" aria-expanded="false">Empleados</a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="/list">Planta de personal</a></li>
+            <li><a class="dropdown-item" href="/add">Registrar un empleado</a></li>
+          </ul>
+          </li>
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-warning" href="/listusadas" id="navbarDropdownMenuLink"  role="button"
+              data-bs-toggle="dropdown" aria-expanded="false"> Inventario</a>
+             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+               <li><a class="dropdown-item" href="/listherramientas">Herramientas en inventario</a></li>
+               <li><a class="dropdown-item" href="/addherramienta">Registrar Herramienta al inventario</a></li>
+             </ul>
+           </li>
+
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-warning" href="/listusadas" id="navbarDropdownMenuLink" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false"> Herramientas </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="/listusadas">Herraminetas en obra</a></li>
+            <li><a class="dropdown-item" href="/addusadas">Asignar herramienta</a></li>
+            <li><a class="dropdown-item" href="/listherramientas">Ver inventario</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+<footer th:fragment="footer" class="bg-dark relative-bottom ">
+    <div class="text-center p-2 container-fluid">
+      <p class="text-white">Copyright &copy<span id="fecha"></span>
+        <a class="text-decoration-none text-warning fw-bold" rel="nofollow noopener noreferrer" href="https://github.com/edwguro" target="_blank">
+        Edwin Rodriguez - rodriguezedwingustavo@gmail.com</a> | Todos los derechos reservados.<br/>Villvicencio-Meta - Telefono:3138354877</p>
+    </div>
+  </footer>  
+
+</na
